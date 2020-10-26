@@ -55,13 +55,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Main\DisplayBonuses.cs" />
+     <Compile Include="Assets\Scripts\Main\IAction.cs" />
+     <Compile Include="Assets\Scripts\Main\IFlay.cs" />
+     <Compile Include="Assets\Scripts\Main\IFlicker.cs" />
+     <Compile Include="Assets\Scripts\Main\IInitialization.cs" />
+     <Compile Include="Assets\Scripts\Main\IRotation.cs" />
+     <Compile Include="Assets\Scripts\Main\IView.cs" />
+     <Compile Include="Assets\Scripts\Main\IViewHeath.cs" />
+     <Compile Include="Assets\Scripts\Main\Iinteractive.cs" />
+     <Compile Include="Assets\Scripts\Main\InteractiveObject.cs" />
      <Compile Include="Assets\Scripts\Main\MainProgram.cs" />
      <None Include="Assets\Scripts\Main\MainProgram.asmdef" />
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/Unity-Storage/MazeBall/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>D:/Unity-Storage/MazeBallGeorgyCH/MazeBall/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Unity-Storage/MazeBall/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/Unity-Storage/MazeBallGeorgyCH/MazeBall/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
