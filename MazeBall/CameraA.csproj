@@ -58,10 +58,10 @@
      <Compile Include="Assets\Scripts\Camera\MainCamera.cs" />
      <None Include="Assets\Scripts\Camera\CameraA.asmdef" />
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/Unity-Storage/MazeBall/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>D:/Unity-Storage/MazeBallGeorgyCH/MazeBall/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Unity-Storage/MazeBall/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/Unity-Storage/MazeBallGeorgyCH/MazeBall/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
