@@ -11,7 +11,7 @@ namespace Main.Bonuses
         {
             _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player.Player>();
             _player.Health += Health;
-            _view.Display(Point, Health);
+            _displayBonuses.Display(+Point,_player.Health);
         }
     }
 }
