@@ -62,10 +62,8 @@
      <Compile Include="Assets\Scripts\Main\IInitialization.cs" />
      <Compile Include="Assets\Scripts\Main\IRotation.cs" />
      <Compile Include="Assets\Scripts\Main\IView.cs" />
-     <Compile Include="Assets\Scripts\Main\IViewHeath.cs" />
      <Compile Include="Assets\Scripts\Main\Iinteractive.cs" />
      <Compile Include="Assets\Scripts\Main\InteractiveObject.cs" />
-     <Compile Include="Assets\Scripts\Main\MainProgram.cs" />
      <None Include="Assets\Scripts\Main\MainProgram.asmdef" />
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Unity-Storage/MazeBallGeorgyCH/MazeBall/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>

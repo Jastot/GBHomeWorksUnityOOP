@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Main\Player\BasePlayer.cs" />
      <Compile Include="Assets\Scripts\Main\Player\MainCamera.cs" />
      <Compile Include="Assets\Scripts\Main\Player\Player.cs" />
+     <Compile Include="Assets\Scripts\Main\Player\PlayersEventArgs.cs" />
      <None Include="Assets\Scripts\Main\Player\PlayerA.asmdef" />
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Unity-Storage/MazeBallGeorgyCH/MazeBall/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
