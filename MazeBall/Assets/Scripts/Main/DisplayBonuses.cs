@@ -9,13 +9,13 @@ namespace Main
         private Image _panel;
         private float _point;
         private int _heath;
-        private float _maxPoint;
+        private float _maxPoint = 10;
+
         public DisplayBonuses()
         {
             _text = Object.FindObjectOfType<Text>();
             _panel = Object.FindObjectOfType<Image>().GetComponent<Image>();
             Debug.Log(_panel);
-            _maxPoint = MainProgram.MaxPoint;
         }
 
         public void Display(int value,int Health)

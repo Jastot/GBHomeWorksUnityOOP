@@ -7,6 +7,7 @@ namespace Main
     public abstract class InteractiveObject : MonoBehaviour, Iinteractive, IComparable<InteractiveObject>
     {
     protected IView _view;
+    protected Color _color;
     public event Action<InteractiveObject> OnDestroyChange;
     public bool IsInteractable { get; } = true;
 

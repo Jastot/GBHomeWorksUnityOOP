@@ -4,16 +4,16 @@ using Random = UnityEngine.Random;
 
 namespace Main.Traps
 {
-    public class BaseTrap : InteractiveObject, IFlay, IFlicker,ICloneable
+    public class BaseTrap : InteractiveObject, IFlay, IFlicker
     {
         public int Point;
         public int Health;
         private Material _material;
         private float _lengthFlay;
-
-
+        public DisplayBonuses _displayBonuses;
         private void Awake()
         {
+            _displayBonuses = new DisplayBonuses();
             _material = GetComponent<Renderer>().material;
             _lengthFlay = Random.Range(1.0f, 5.0f);
         }
@@ -34,15 +34,6 @@ namespace Main.Traps
         {
             _material.color = new Color(_material.color.r, _material.color.g, _material.color.b,
                 Mathf.PingPong(Time.time, 1.0f));
-        }
-
-        public object Clone()
-        {
-            //это то все понятно, но тогда у нас Main(Game Controller) должен
-            //передавать координаты и сам клонировать
-            //верно?
-            //я пока что раскидаю руками бонусы и ловушки...
-            return Instantiate(gameObject, transform.position, transform.rotation, transform.parent);
         }
     }
 }

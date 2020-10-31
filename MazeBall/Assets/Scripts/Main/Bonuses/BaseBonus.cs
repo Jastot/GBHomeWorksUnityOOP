@@ -5,23 +5,23 @@ using Random = UnityEngine.Random;
 
 namespace Main.Bonuses
 {
-    public class BaseBonus : InteractiveObject, IFlay, IFlicker, IEquatable<BaseBonus>,ICloneable
+    public class BaseBonus : InteractiveObject, IFlay, IFlicker, IEquatable<BaseBonus>
     {
         public int Point;
         public int Health;
         private Material _material;
         private float _lengthFlay;
-
+        public DisplayBonuses _displayBonuses;
 
         private void Awake()
         {
+            _displayBonuses = new DisplayBonuses();
             _material = GetComponent<Renderer>().material;
             _lengthFlay = Random.Range(1.0f, 5.0f);
         }
 
         protected override void Interaction()
         {
-            //_view.Display(Point, Health);
         }
 
         public void Flay()
@@ -40,13 +40,6 @@ namespace Main.Bonuses
         public bool Equals(BaseBonus other)
         {
             return Point == other.Point;
-        }
-        public object Clone()
-        {
-            //это то все понятно, но тогда у нас Main(Game Controller) должен
-            //передавать координаты и сам клонировать
-            //верно?
-            return Instantiate(gameObject, transform.position, transform.rotation, transform.parent);
         }
     }
 }
