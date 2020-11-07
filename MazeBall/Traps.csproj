@@ -599,10 +599,6 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="PlayerA.csproj">
-      <Project>{F3170307-7CF1-8C2D-4512-AE85F3E0D6FD}</Project>
-      <Name>PlayerA</Name>
-    </ProjectReference>
     <ProjectReference Include="MainProgram.csproj">
       <Project>{7BCAF502-6E44-4501-658B-58CB731E25D7}</Project>
       <Name>MainProgram</Name>

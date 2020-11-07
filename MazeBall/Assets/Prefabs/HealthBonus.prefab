@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6763825173456611544}
   - component: {fileID: 7883865017823184516}
   - component: {fileID: 2082587495132363833}
-  - component: {fileID: 6904099655997263679}
+  - component: {fileID: 4295074901869194713}
   m_Layer: 0
   m_Name: HealthBonus
   m_TagString: Untagged
@@ -94,7 +94,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6904099655997263679
+--- !u!114 &4295074901869194713
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,8 +103,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7487317941545675221}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51abfb8bb1c578142a56ff637a92665f, type: 3}
+  m_Script: {fileID: 11500000, guid: 01709d2dad0f478eb4835726fb91fbc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Point: 1
-  Health: 2
+  _point: 0
+  _health: 4
+  _speed: 0
