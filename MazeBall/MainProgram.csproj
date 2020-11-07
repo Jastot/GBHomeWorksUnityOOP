@@ -55,7 +55,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Main\Bonuses\BaseBonus.cs" />
+     <Compile Include="Assets\Scripts\Main\Bonuses\SecondLifeBonus.cs" />
+     <Compile Include="Assets\Scripts\Main\Bonuses\SpeedBonus.cs" />
      <Compile Include="Assets\Scripts\Main\DisplayBonuses.cs" />
+     <Compile Include="Assets\Scripts\Main\GameController\DisplayEndGame.cs" />
+     <Compile Include="Assets\Scripts\Main\GameController\ListOfInteractiveObjects.cs" />
+     <Compile Include="Assets\Scripts\Main\GameController\MainProgram.cs" />
      <Compile Include="Assets\Scripts\Main\IAction.cs" />
      <Compile Include="Assets\Scripts\Main\IFlay.cs" />
      <Compile Include="Assets\Scripts\Main\IFlicker.cs" />
@@ -64,6 +70,14 @@
      <Compile Include="Assets\Scripts\Main\IView.cs" />
      <Compile Include="Assets\Scripts\Main\Iinteractive.cs" />
      <Compile Include="Assets\Scripts\Main\InteractiveObject.cs" />
+     <Compile Include="Assets\Scripts\Main\Player\BasePlayer.cs" />
+     <Compile Include="Assets\Scripts\Main\Player\MainCamera.cs" />
+     <Compile Include="Assets\Scripts\Main\Player\Player.cs" />
+     <Compile Include="Assets\Scripts\Main\Player\PlayersEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Main\Traps\BaseTrap.cs" />
+     <Compile Include="Assets\Scripts\Main\Traps\DoorTrap.cs" />
+     <Compile Include="Assets\Scripts\Main\Traps\MineTrap.cs" />
+     <Compile Include="Assets\Scripts\Main\Traps\SpeedTrap.cs" />
      <None Include="Assets\Scripts\Main\MainProgram.asmdef" />
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Unity-Storage/MazeBallGeorgyCH/MazeBall/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
