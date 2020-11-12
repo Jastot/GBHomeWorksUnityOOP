@@ -107,5 +107,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _point: 0
-  _health: 4
+  _health: 5
   _speed: 0

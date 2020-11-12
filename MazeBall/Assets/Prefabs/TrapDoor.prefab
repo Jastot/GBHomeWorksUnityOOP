@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9222904174157627639}
   - component: {fileID: 8142728701050637018}
   - component: {fileID: 2107855321422562776}
-  - component: {fileID: 8450958875838671752}
+  - component: {fileID: -4246512171460350799}
   m_Layer: 0
   m_Name: TrapDoor
   m_TagString: Untagged
@@ -95,7 +95,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &8450958875838671752
+--- !u!114 &-4246512171460350799
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,8 +104,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7869981437571389619}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b3243d0f05b11e428bcf6028fbaa609, type: 3}
+  m_Script: {fileID: 11500000, guid: 01709d2dad0f478eb4835726fb91fbc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Point: 0
-  Health: 0
+  _point: 0
+  _health: 1000
+  _speed: 0

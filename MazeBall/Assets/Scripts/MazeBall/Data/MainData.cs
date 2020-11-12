@@ -24,7 +24,7 @@ namespace MazeBall
             }
         }
     
-        public InteractiveData Enemy
+        public InteractiveData Bonus
         {
             get
             {
@@ -39,5 +39,7 @@ namespace MazeBall
         
         private T Load<T>(string resourcesPath) where T : Object =>
             Resources.Load<T>(Path.ChangeExtension(resourcesPath, null));
+
+
     }
 }

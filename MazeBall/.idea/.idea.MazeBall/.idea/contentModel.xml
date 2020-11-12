@@ -10,6 +10,7 @@
           <e p="MazeBall" t="Include">
             <e p="Controllers" t="Include">
               <e p="CameraController.cs" t="Include" />
+              <e p="Controllers.cs" t="Include" />
               <e p="InputController.cs" t="Include" />
               <e p="InputInitialization.cs" t="Include" />
               <e p="InteractiveInitialization.cs" t="Include" />
@@ -26,25 +27,29 @@
               <e p="Extensions.cs" t="Include" />
             </e>
             <e p="GameController" t="Include">
-              <e p="Controllers.cs" t="Include" />
               <e p="GameController.cs" t="Include" />
             </e>
             <e p="InteractiveObjects" t="Include">
+              <e p="HealingBonus.cs" t="Include" />
               <e p="Iinteractive.cs" t="Include" />
               <e p="IInteractiveFactory.cs" t="Include" />
               <e p="InteractiveFactory.cs" t="Include" />
-              <e p="InteractiveObjects.cs" t="Include" />
+              <e p="InteractiveObjectsMassive.cs" t="Include" />
               <e p="InteractiveProvider.cs" t="Include" />
               <e p="InterectiveObjectType.cs" t="Include" />
-              <e p="IStartPosition.cs" t="Include" />
+              <e p="SpeedBonus.cs" t="Include" />
             </e>
             <e p="Interfaces" t="Include">
+              <e p="IBonusOrTrap.cs" t="Include" />
               <e p="ICleanData.cs" t="Include" />
               <e p="IController.cs" t="Include" />
               <e p="IExecute.cs" t="Include" />
+              <e p="IFlay.cs" t="Include" />
+              <e p="IFlicker.cs" t="Include" />
               <e p="IInitialization.cs" t="Include" />
               <e p="ILateExecute.cs" t="Include" />
               <e p="IUserInputs.cs" t="Include" />
+              <e p="IView.cs" t="Include" />
             </e>
             <e p="Managers" t="Include">
               <e p="AxisManager.cs" t="Include" />
@@ -52,6 +57,7 @@
             <e p="Player" t="Include">
               <e p="IPlayerFactory.cs" t="Include" />
               <e p="PlayerFactory.cs" t="Include" />
+              <e p="PlayerProvider.cs" t="Include" />
             </e>
             <e p="UserInput" t="Include">
               <e p="InputHorizontal.cs" t="Include" />
@@ -63,17 +69,13 @@
             <e p="Bonuses" t="Include">
               <e p="BaseBonus.cs" t="Include" />
               <e p="SecondLifeBonus.cs" t="Include" />
-              <e p="SpeedBonus.cs" t="Include" />
             </e>
             <e p="DisplayBonuses.cs" t="Include" />
             <e p="DisplayEndGame.cs" t="Include" />
             <e p="IAction.cs" t="Include" />
-            <e p="IFlay.cs" t="Include" />
-            <e p="IFlicker.cs" t="Include" />
             <e p="IInitialization.cs" t="Include" />
             <e p="InteractiveObject.cs" t="Include" />
             <e p="IRotation.cs" t="Include" />
-            <e p="IView.cs" t="Include" />
             <e p="ListOfInteractiveObjects.cs" t="Include" />
             <e p="MainCamera.cs" t="Include" />
             <e p="MainProgram.cs" t="Include" />

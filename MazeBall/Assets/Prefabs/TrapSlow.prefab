@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3557526125301657161}
   - component: {fileID: 137972730783186965}
   - component: {fileID: 8099132718290827944}
-  - component: {fileID: 8604351342031158703}
+  - component: {fileID: 2203477901831895304}
   m_Layer: 0
   m_Name: TrapSlow
   m_TagString: Untagged
@@ -94,7 +94,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8604351342031158703
+--- !u!114 &2203477901831895304
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,9 +103,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 822887690751061828}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f11cc40e4363ff47968b7909fc8e579, type: 3}
+  m_Script: {fileID: 11500000, guid: 01709d2dad0f478eb4835726fb91fbc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Point: 0
-  Health: 0
-  Speed: 3
+  _point: 0
+  _health: 0
+  _speed: 20

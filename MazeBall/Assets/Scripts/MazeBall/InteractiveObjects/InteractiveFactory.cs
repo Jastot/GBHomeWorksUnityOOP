@@ -1,4 +1,5 @@
 ﻿
+using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -7,15 +8,24 @@ namespace MazeBall
     public class InteractiveFactory: IInteractiveFactory
     {
         private readonly InteractiveData _data;
+        private readonly List<Transform> _positions;
 
-        public InteractiveFactory(InteractiveData data)
+        public InteractiveFactory(InteractiveData data, List<Transform> positions)
         {
             _data = data;
+            _positions = positions;
         }
             
         public IInteractive CreateInteractive(InterectiveObjectType type)
         {
-            var enemyProvider = _data.GetEnemy(type);
+            var enemyProvider = _data.GetEnemyOfType(type);
+            return Object.Instantiate(enemyProvider);
+        }
+
+        public IInteractive CreateInteractiveFromMass(int index)
+        {
+            InteractiveProvider enemyProvider = _data.GetEnemyProviderByIndex(index);
+            enemyProvider.transform.position = _positions[index].position;
             return Object.Instantiate(enemyProvider);
         }
     }
