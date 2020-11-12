@@ -43,6 +43,12 @@ namespace MazeBall
             gameObject.tag = tag;
             return gameObject;
         }
+        
+        public static GameObject AddScript(this GameObject gameObject, string scriptName)
+        {
+            gameObject.AddScript(scriptName);
+            return gameObject;
+        }
         private static T GetOrAddComponent<T>(this GameObject gameObject) where T : Component
         {
             var result = gameObject.GetComponent<T>();
@@ -53,5 +59,7 @@ namespace MazeBall
 
             return result;
         }
+        
+        
     }
 }

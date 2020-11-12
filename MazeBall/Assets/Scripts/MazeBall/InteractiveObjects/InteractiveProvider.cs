@@ -5,25 +5,30 @@ namespace MazeBall
 {
     public class InteractiveProvider: MonoBehaviour,IInteractive
     {
-        [SerializeField] private int _point;
-        [SerializeField] private int _health;
-        [SerializeField] private float _speed;
-        private Player _player;
+        public int _point = 1;
+        public int _health = 5;
+        public float Speed = 20;
         private Rigidbody _rigidbody;
-        private Transform _transform;
- 
-        public void Start()
-        {
-         _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        }
+        [SerializeField] private InterectiveObjectType _type;
+        
         private void OnTriggerEnter(Collider other)
         {
             if (!other.CompareTag("Player"))
             {
                 return;
             }
-            
-            
+            Debug.Log(_type);
+            switch (_type)
+            {
+                case InterectiveObjectType.Healing:
+                    HealingBonus Healunit = new HealingBonus();
+                    Healunit.Interaction();
+                    break;
+                case InterectiveObjectType.SpeedBoost:
+                    SpeedBonus Speedunit = new SpeedBonus();
+                    Speedunit.Interaction();
+                    break;
+            }
         }
         
         
