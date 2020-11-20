@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: Player
   m_EditorClassIdentifier: 
   _speed: 100
-  _heath: 5
+  _heath: 10
   _maxScore: 20
+  position:
+    X: 0
+    Y: 0
+    Z: 0
   mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
   material: {fileID: 2100000, guid: a2f40e4004b187749ac143197cb3852e, type: 2}

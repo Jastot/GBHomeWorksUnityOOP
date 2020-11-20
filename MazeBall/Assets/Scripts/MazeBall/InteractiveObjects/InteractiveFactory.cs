@@ -9,11 +9,13 @@ namespace MazeBall
     {
         private readonly InteractiveData _data;
         private readonly List<Transform> _positions;
+        private readonly PlayerModel _playerData;
 
-        public InteractiveFactory(InteractiveData data, List<Transform> positions)
+        public InteractiveFactory(InteractiveData data, List<Transform> positions, PlayerModel playerData)
         {
             _data = data;
             _positions = positions;
+            _playerData = playerData;
         }
             
         public IInteractive CreateInteractive(InterectiveObjectType type)
@@ -26,6 +28,8 @@ namespace MazeBall
         {
             InteractiveProvider enemyProvider = _data.GetEnemyProviderByIndex(index);
             enemyProvider.transform.position = _positions[index].position;
+            enemyProvider._type = _data.GetEnemyTypeByIndex(index);
+            enemyProvider._PlayerModel = _playerData;
             return Object.Instantiate(enemyProvider);
         }
     }

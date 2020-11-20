@@ -5,5 +5,6 @@ namespace MazeBall
     public interface IPlayerFactory
     {
         GameObject CreatePlayer();
+        PlayerData GivePlayerData();
     }
 }
