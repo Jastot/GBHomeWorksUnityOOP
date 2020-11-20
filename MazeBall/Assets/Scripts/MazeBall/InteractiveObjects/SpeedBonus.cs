@@ -2,15 +2,15 @@
 
 namespace MazeBall
 {
-    public sealed class SpeedBonus : InteractiveProvider, IBonusOrTrap
+    public sealed class SpeedBonus 
     {
-        private Player _player;
+        
 
-        public void Interaction()
+        public void Interaction(PlayerData playerModel,float speed)
         {
-            _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-            _player.speed += Speed;
             
         }
+
+        
     }
 }

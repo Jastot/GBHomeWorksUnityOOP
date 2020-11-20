@@ -20,53 +20,94 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08cc5965-0356-4380-90a1-4f0ac6be3506" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/HealingBonus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/HealingBonus.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/InteractiveObjectsMassive.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/InteractiveObjectsMassive.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/SpeedBonus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/SpeedBonus.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/IBonusOrTrap.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/IBonusOrTrap.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Player/PlayerProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Player/PlayerProvider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/BonusOrTrapController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/BonusOrTrapController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/PlayerLifeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/PlayerLifeController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/Crypto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/Crypto.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/JsonData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/JsonData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/PlayerPrefsData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/PlayerPrefsData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/SaveDataRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/SaveDataRepository.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/SavedData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/SavedData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/XMLSavingLoading.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/XMLSavingLoading.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/IData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/IData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/IWatchingHealth.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/IWatchingHealth.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Player/PlayerModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Player/PlayerModel.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MazeBall/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MazeBall/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MazeBall/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MazeBall/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HealthBonus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HealthBonus.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpeedBonus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpeedBonus.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TrapDoor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TrapDoor.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TrapHealth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TrapHealth.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TrapSlow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TrapSlow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/BonusSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/BonusSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BonusOrTrap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BonusOrTrap.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/InteractiveInitialization.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/InteractiveInitialization.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/InputController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/InputController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/PlayerInitialization.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/PlayerInitialization.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/InteractiveData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/InteractiveData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/MainData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/MainData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/PlayerData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Extensions/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Extensions/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/GameController/Controllers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/Controllers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/GameController/Controllers.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/Controllers.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/GameController/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/GameController/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/IInteractiveFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/IInteractiveFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/IStartPosition.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/IStartPosition.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/HealingBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/HealingBonus.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/InteractiveFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/InteractiveFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/InteractiveObjects.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/InteractiveObjects.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/InteractiveObjectsMassive.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/InteractiveObjectsMassive.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/InteractiveProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/InteractiveProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/SpeedBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/SpeedBonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Player/IPlayerFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Player/IPlayerFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Player/PlayerFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Player/PlayerFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/Bonuses/SpeedBonus.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/Bonuses/SpeedBonus.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/IFlay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/IFlay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/IFlay.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/IFlay.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/IFlicker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/IFlicker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/IFlicker.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/IFlicker.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/IView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/IView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/IView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/IView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Player/PlayerProvider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MazeBall/Player/PlayerProvider.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/BasePlayer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/BasePlayer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/Bonuses.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/Bonuses/BaseBonus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/Bonuses/BaseBonus.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/Bonuses/SecondLifeBonus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/Bonuses/SecondLifeBonus.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/DisplayBonuses.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/DisplayBonuses.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/DisplayEndGame.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/DisplayEndGame.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/IAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/IAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/IInitialization.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/IInitialization.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/IRotation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/IRotation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/InteractiveObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/InteractiveObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/ListOfInteractiveObjects.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/ListOfInteractiveObjects.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/MainCamera.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/MainCamera.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/MainProgram.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/MainProgram.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/Player.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/Player.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/PlayersEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/PlayersEventArgs.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/Traps.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/Traps/BaseTrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/Traps/BaseTrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/Traps/DoorTrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/Traps/DoorTrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/Traps/MineTrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/Traps/MineTrap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/Traps/SpeedTrap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trash/Traps/SpeedTrap.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d9/d9cb31997b0ddb796b452dee76b8bfe0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fe/fe39c6125b0b9b2f9899e41ff92d5bbf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/362c28-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/362c28-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/4a56c2-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/4a56c2-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,18 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/GameController/DisplayBonuses.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/GameController/DisplayEndGame.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/GameController/MainProgram.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/Bonuses/BaseBonus.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/Bonuses/SpeedBonus.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/Bonuses/SecondLifeBonus.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/Traps/MineTrap.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/Traps/SpeedTrap.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Extensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/IUserInputs.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/UserInput/InputHorizontal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/UserInput/InputVertical.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Managers/AxisManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/IController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/ICleanData.cs" />
@@ -107,10 +136,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/GameController/Controllers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/GameController/PlayerInitialization.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/InputInitialization.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/InputController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/MoveController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Player/IPlayerFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/BonusesAndTraps/IBonusOrTraps.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/InteractiveObjects.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/InterectiveObjectType.cs" />
@@ -121,22 +148,36 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/IInteractive.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/IInteractiveProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/IPlayerStats.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/PlayerInitialization.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/PlayerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/IInteractiveFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/MainData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/InteractiveObjectsMassive.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/InteractiveData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/GameController/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/InteractiveInitialization.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/InteractiveFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/BonusOrTrap.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/SpeedBonus.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/InteractiveProvider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Extensions/Extensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Player/PlayerFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Player/PlayerProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Player/PlayerFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Player/IPlayerFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/IWhatchingHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/IWatchingHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/PlayerInitialization.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/BonusOrTrapController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Player/PlayerModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/InteractiveData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/SpeedBonus.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/HealingBonus.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/InteractiveProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/InteractiveObjects/InteractiveFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Interfaces/IData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/SavedData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/XMLSavingLoading.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Extensions/Extensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/PlayerPrefsData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/PlayerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/Crypto.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/JsonData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Data/SaveDataRepository.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/PlayerLifeController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/Controllers/InputController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MazeBall/GameController/GameController.cs" />
       </list>
     </option>
   </component>
@@ -149,8 +190,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -192,6 +236,8 @@
       <workItem from="1604741199678" duration="1883000" />
       <workItem from="1604910011164" duration="602000" />
       <workItem from="1605079376023" duration="15751000" />
+      <workItem from="1605347494783" duration="5203000" />
+      <workItem from="1605777114723" duration="22482000" />
     </task>
     <servers />
   </component>
@@ -199,7 +245,7 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -220,18 +266,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size/0.0.1536.824@0.0.1536.824" timestamp="1604156266658" />
-    <state x="541" y="86" key="RiderGenerateDialog" timestamp="1604682650706">
+    <state x="541" y="86" key="RiderGenerateDialog" timestamp="1605863767195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="541" y="86" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1604682650706" />
+    <state x="541" y="86" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1605863767195" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1603531946687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603531946687" />
-    <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog" timestamp="1603699301557">
+    <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog" timestamp="1605779052434">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1603699301557" />
+    <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1605779052434" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1605789870775">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605789870775" />
     <state x="713" y="61" width="672" height="678" key="search.everywhere.popup" timestamp="1605084223015">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

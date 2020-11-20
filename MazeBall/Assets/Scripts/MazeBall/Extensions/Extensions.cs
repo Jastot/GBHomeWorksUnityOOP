@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEditor.UIElements;
 using UnityEngine;
 
@@ -44,11 +45,6 @@ namespace MazeBall
             return gameObject;
         }
         
-        public static GameObject AddScript(this GameObject gameObject, string scriptName)
-        {
-            gameObject.AddScript(scriptName);
-            return gameObject;
-        }
         private static T GetOrAddComponent<T>(this GameObject gameObject) where T : Component
         {
             var result = gameObject.GetComponent<T>();
@@ -59,7 +55,19 @@ namespace MazeBall
 
             return result;
         }
-        
+        public static bool TryBool(this string self)
+        {
+            return Boolean.TryParse(self, out var res) && res;
+        }
+
+        public static float TrySingle(this string self)
+        {
+            if (Single.TryParse(self, out var res))
+            {
+                return res;
+            }
+            return 0;
+        }
         
     }
 }

@@ -2,16 +2,11 @@
 
 namespace MazeBall
 {
-    public sealed class HealingBonus : InteractiveProvider, IBonusOrTrap
+    public sealed class HealingBonus
     {
-        
-        private Player _player;
-
-        public void Interaction()
+        public void Interaction(PlayerModel playerModel,int heal)
         {
-            _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-            _player.heath += _health;
-            
+            playerModel._health += heal;
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace MazeBall
 {
@@ -9,10 +10,15 @@ namespace MazeBall
         [SerializeField, Range(0, 100)] private int _heath;
         [SerializeField, Range(0, 100)] private int _maxScore;
 
+        public Vector3Serializable position;
         public Mesh mesh;
         public Material material;
         public float Speed => _speed;
-        public int Heath => _heath;
+        public int Heath
+        {
+            get => _heath;
+        }
+
         public int MaxPoints => _maxScore;
      
     }

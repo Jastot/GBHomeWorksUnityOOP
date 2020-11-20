@@ -14,7 +14,8 @@ namespace MazeBall
         {
             public InterectiveObjectType Type;
             public InteractiveProvider EnemyPrefab;
-            private Transform Position;
+            private Transform _position;
+            public PlayerModel Target;
         }
 
         [SerializeField] private List<EnemyInfo> _enemyInfos;
@@ -31,6 +32,17 @@ namespace MazeBall
             return enemyInfo.EnemyPrefab;
         }
 
+        public PlayerModel SetTargetByIndex(int index, PlayerModel model)
+        {
+            var enemyinfo = _enemyInfos[index];
+            enemyinfo.Target = model;
+            return enemyinfo.Target;
+        }
+        public InterectiveObjectType GetEnemyTypeByIndex(int index)
+        {
+            var enemyInfo = _enemyInfos[index];
+            return enemyInfo.Type;
+        }
         public EnemyInfo GetEnemyInfoByIndex(int index)
         {
             var enemyInfo = _enemyInfos[index];
