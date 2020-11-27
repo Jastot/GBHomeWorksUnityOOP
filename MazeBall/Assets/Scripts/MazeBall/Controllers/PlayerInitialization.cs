@@ -7,22 +7,25 @@ namespace MazeBall
         
         private readonly IPlayerFactory _playerFactory;
         private GameObject _player;
-        public PlayerModel _playerModel { get; }
 
-        public PlayerInitialization(IPlayerFactory playerFactory, Vector3 startPosition)
+        public PlayerInitialization(IPlayerFactory playerFactory, GamePoolContext gamePoolContext)
         {
+            //тут ссылка на игрока. 
+            //отсюда 
             _playerFactory = playerFactory;
             _player = _playerFactory.CreatePlayer();
-            _player.transform.position = startPosition;
-            _playerModel = new PlayerModel(_playerFactory.GivePlayerData());
+            var _playerStruct = _playerFactory.GivePlayerData().PlayerStruct;
+            _player.transform.position = _playerStruct.StartPosition;
+            _playerStruct.Player = _player;
+            var _playerComponents = _playerFactory.GivePlayerData().PlayerComponents;
+            _playerComponents.Rigitbody = _playerStruct.Player.GetComponent<Rigidbody>();
+            
+            var playerModel = new PlayerModel(_playerStruct,_playerComponents);
+            gamePoolContext.AddPlayerModel(playerModel);
         }
         
         public void Initialization() { }
         
-        public PlayerModel GetPlayerModel()
-        {
-            return _playerModel;
-        }
         public GameObject GetPlayer()
         {
             return _player;

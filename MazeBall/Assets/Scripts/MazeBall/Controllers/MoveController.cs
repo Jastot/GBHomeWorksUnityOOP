@@ -7,7 +7,7 @@ namespace MazeBall
 
         private readonly Rigidbody _player;
 
-        private readonly IPlayerStats _playerData;
+        private readonly PlayerData _playerData;
 
         private float _horizontal, _vertical;
 
@@ -16,7 +16,7 @@ namespace MazeBall
         private readonly IUserInputs _horizontalInput,_verticalInput;
 
         public MoveController((IUserInputs inputHorizontal, IUserInputs inputVertical) input,
-            Rigidbody player, IPlayerStats playerData)
+            Rigidbody player, PlayerData playerData)
         {
             _player = player;
             _horizontalInput = input.inputHorizontal;
@@ -28,7 +28,7 @@ namespace MazeBall
         }
         public void Execute(float deltaTime)
         {
-            var speed = deltaTime * _playerData.Speed;
+            var speed = deltaTime * _playerData.PlayerStruct.Speed;
             _movement.Set(_horizontal*speed,0.0f,_vertical * speed);
             _player.AddForce(_movement);
         }

@@ -1,27 +1,31 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Serialization;
 
 namespace MazeBall
 {
     public class InteractiveProvider: MonoBehaviour,IInteractive
     {
-        public InterectiveObjectType _type;
+        public GamePoolContext _gamePoolContext;
+        public InterectiveObjectType type;
         public int point = 1;
         public int health = 5;
         public float speed = 20;
-        public PlayerModel _PlayerModel;
 
         private void OnTriggerEnter(Collider other)
         {
+            
+            Debug.Log(_gamePoolContext);
+
             if (!other.CompareTag("Player"))
             {
                 return;
             }
-            switch (_type)
+            switch (type)
             {
                 case InterectiveObjectType.Healing:
-                    HealingBonus healunit = new HealingBonus();
-                    healunit.Interaction(_PlayerModel,health);
+                   // HealingBonus healunit = new HealingBonus(_gamePoolContext);
+                   // healunit.Interaction(health);
                     break;
                 case InterectiveObjectType.SpeedBoost:
                     // SpeedBonus speedunit = new SpeedBonus();
@@ -29,7 +33,11 @@ namespace MazeBall
                     break;
             }
         }
-        
-        
+
+         public void GetGamePoolContext(GamePoolContext gamePoolContext)
+        {
+             _gamePoolContext = gamePoolContext;
+         }
+
     }
 }

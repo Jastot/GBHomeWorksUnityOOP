@@ -34,7 +34,7 @@ namespace MazeBall
             }
             var savePlayer = new SavedData
             {
-                Position = player.position,
+                Position = player.PlayerStruct.StartPosition,
                 Name = "SuperPlayer"
             };
 
@@ -46,7 +46,7 @@ namespace MazeBall
             var file = Path.Combine(_path, _fileName);
             if (!File.Exists(file)) return;
             var newPlayer = _data.Load(file);
-            player.position = newPlayer.Position;
+            player.PlayerStruct.StartPosition = newPlayer.Position;
             player.name = newPlayer.Name;
         }
     }

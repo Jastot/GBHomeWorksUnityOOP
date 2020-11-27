@@ -10,14 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c508068830b047849326a72b786632c9, type: 3}
-  m_Name: Player
+  m_Name: SuperPlayer
   m_EditorClassIdentifier: 
-  _speed: 100
-  _heath: 10
-  _maxScore: 20
-  position:
-    X: 0
-    Y: 0
-    Z: 0
-  mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-  material: {fileID: 2100000, guid: a2f40e4004b187749ac143197cb3852e, type: 2}
+  PlayerStruct:
+    Player: {fileID: 2863464703744660110, guid: 47ec867eb8f241347bc52016df6177ff,
+      type: 3}
+    StartPosition: {x: 4.56, y: 0.758, z: 8.641}
+    Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+    Material: {fileID: 2100000, guid: a2f40e4004b187749ac143197cb3852e, type: 2}
+    Health: 20
+    Speed: 100
+    CurrentPoints: 0
+    MaxPoint: 100
+  PlayerComponents:
+    Rigitbody: {fileID: 0}

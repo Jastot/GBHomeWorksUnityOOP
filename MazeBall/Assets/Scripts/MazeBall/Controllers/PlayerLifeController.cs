@@ -2,20 +2,17 @@
 
 namespace MazeBall
 {
-    public class PlayerLifeController: IExecute, ICleanData
+    public class PlayerLifeController: IExecute
     {
-        private readonly PlayerModel _playerModel;
+        private readonly GamePoolContext _gamePoolContext;
         private readonly IWatchingHealth _watchingHealth;
-        private GameObject _player;
         private int _health;
         
-        public PlayerLifeController(PlayerData data ,PlayerModel model)
+        public PlayerLifeController(GamePoolContext gamePoolContext)
         {
-            _health = data.Heath;
-            _watchingHealth = model;
-            _watchingHealth.WatchingHealth += HealthChange;
-            _player = GameObject.FindGameObjectWithTag("Player");
-           
+            _gamePoolContext = gamePoolContext;
+            _health = _gamePoolContext.PlayerModel.PlayerStruct.Health;
+            //_watchingHealth.WatchingHealth += HealthChange;
         }
 
         private void HealthChange(int value)
@@ -24,14 +21,15 @@ namespace MazeBall
         }
         public void Execute(float deltaTime)
         {
+            //Debug.Log("Current "+_health);
             if (_health == 0)
-            {
-                Object.Destroy(_player);
+            { 
+                Object.Destroy(_gamePoolContext.PlayerModel.PlayerStruct.Player);
             }
         }
-        public void CleanData() 
-        {
-            _watchingHealth.WatchingHealth -= HealthChange; 
-        }
+        // public void CleanData() 
+        // {
+        //     _watchingHealth.WatchingHealth -= HealthChange; 
+        // }
     }
 }

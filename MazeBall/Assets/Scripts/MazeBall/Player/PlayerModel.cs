@@ -6,38 +6,16 @@ using UnityEngine;
 
 namespace MazeBall
 {
-    public sealed class PlayerModel : IWatchingHealth
+    public sealed class PlayerModel 
     {
-        private readonly float _speed;
-        public  int _health;
-        private readonly int _maxScore;
-        
-        public event Action<int> WatchingHealth= delegate(int i) { };
-        public event Action<int> WatchingPoints= delegate(int i) { };
-        public event Action<float> WatchingSpeed= delegate(float f) { };
-        
-        public void GetHeath()
-        {
-            WatchingHealth.Invoke(_health);
-        }
+        public PlayerStruct PlayerStruct;
+        public PlayerComponents PlayerComponents;
 
-        public void GetSpeed()
+        public PlayerModel(PlayerStruct playerStruct,PlayerComponents playerComponents)
         {
-            WatchingSpeed.Invoke(_speed);
+            PlayerStruct = playerStruct;
+            PlayerComponents = playerComponents;
         }
-
-        public void GetPoints()
-        {
-            WatchingPoints.Invoke(_maxScore);
-        }
-
-        public PlayerModel(PlayerData playerData)
-        {
-            _speed = playerData.Speed;
-            _health = playerData.Heath;
-            _maxScore = playerData.MaxPoints;
-        }
-
         
     }
 }

@@ -14,8 +14,9 @@ namespace MazeBall
         {
             public InterectiveObjectType Type;
             public InteractiveProvider EnemyPrefab;
-            private Transform _position;
             public PlayerModel Target;
+            private Transform _position;
+            
         }
 
         [SerializeField] private List<EnemyInfo> _enemyInfos;

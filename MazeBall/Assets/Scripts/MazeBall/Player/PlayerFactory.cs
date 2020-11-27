@@ -15,7 +15,7 @@ namespace MazeBall
         public GameObject CreatePlayer()
         {
             return new GameObject("Player").
-                AddRigidbody(1).AddMeshFilter(_playerData.mesh).AddMeshRenderer(_playerData.material)
+                AddRigidbody(1).AddMeshFilter(_playerData.PlayerStruct.Mesh).AddMeshRenderer(_playerData.PlayerStruct.Material)
                 .AddSphereCollider().AddTag("Player");
         }
 
