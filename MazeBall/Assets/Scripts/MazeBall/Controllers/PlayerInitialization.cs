@@ -10,8 +10,7 @@ namespace MazeBall
 
         public PlayerInitialization(IPlayerFactory playerFactory, GamePoolContext gamePoolContext)
         {
-            //тут ссылка на игрока. 
-            //отсюда 
+
             _playerFactory = playerFactory;
             _player = _playerFactory.CreatePlayer();
             var _playerStruct = _playerFactory.GivePlayerData().PlayerStruct;
