@@ -2,18 +2,19 @@
 
 namespace MazeBall
 {
-    public sealed class HealingBonus
+    public sealed class HealingBonus : IInteraction
     {
         private readonly GamePoolContext _gamePoolContext;
+        private readonly int _heal;
 
-        public HealingBonus(GamePoolContext gamePoolContext)
+        public HealingBonus(GamePoolContext gamePoolContext,int heal)
         {
             _gamePoolContext = gamePoolContext;
-            Debug.Log(_gamePoolContext);
+            _heal = heal;
         }
-        public void Interaction(int heal)
+        public void Interaction()
         {
-            _gamePoolContext.PlayerModel.PlayerStruct.Health += heal;
+            _gamePoolContext.PlayerModel.PlayerStruct.Health += _heal;
         }
     }
 }

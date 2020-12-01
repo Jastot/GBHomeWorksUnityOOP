@@ -4,6 +4,7 @@
     <e p="C:\Users\georg\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\georg\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_MazeBall.-1109909751.00" t="ExcludeRecursive" />
     <e p="D:\Unity-Storage\MazeBallGeorgyCH\MazeBall" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
@@ -32,6 +33,13 @@
               <e p="SavedData.cs" t="Include" />
               <e p="XMLSavingLoading.cs" t="Include" />
             </e>
+            <e p="Editor" t="Include">
+              <e p="CreatePointEditor.cs" t="Include" />
+            </e>
+            <e p="EditorAddons" t="Include">
+              <e p="CreateNewPoint.cs" t="Include" />
+              <e p="PathBot.cs" t="Include" />
+            </e>
             <e p="Extensions" t="Include">
               <e p="Extensions.cs" t="Include" />
             </e>
@@ -39,14 +47,19 @@
               <e p="GameController.cs" t="Include" />
             </e>
             <e p="InteractiveObjects" t="Include">
+              <e p="DamageTrap.cs" t="Include" />
+              <e p="DoorTrap.cs" t="Include" />
               <e p="HealingBonus.cs" t="Include" />
               <e p="Iinteractive.cs" t="Include" />
               <e p="IInteractiveFactory.cs" t="Include" />
               <e p="InteractiveFactory.cs" t="Include" />
+              <e p="InteractiveModel.cs" t="Include" />
               <e p="InteractiveObjectsMassive.cs" t="Include" />
               <e p="InteractiveProvider.cs" t="Include" />
+              <e p="InteractiveStructe.cs" t="Include" />
               <e p="InterectiveObjectType.cs" t="Include" />
               <e p="SpeedBonus.cs" t="Include" />
+              <e p="SpeedTrap.cs" t="Include" />
             </e>
             <e p="Interfaces" t="Include">
               <e p="IBonusOrTrap.cs" t="Include" />
@@ -57,6 +70,7 @@
               <e p="IFlay.cs" t="Include" />
               <e p="IFlicker.cs" t="Include" />
               <e p="IInitialization.cs" t="Include" />
+              <e p="IInteraction.cs" t="Include" />
               <e p="ILateExecute.cs" t="Include" />
               <e p="IUserInputs.cs" t="Include" />
               <e p="IView.cs" t="Include" />
@@ -64,6 +78,11 @@
             </e>
             <e p="Managers" t="Include">
               <e p="AxisManager.cs" t="Include" />
+            </e>
+            <e p="MiniMap" t="Include">
+              <e p="MiniMap.cs" t="Include" />
+              <e p="Radar.cs" t="Include" />
+              <e p="RadarObj.cs" t="Include" />
             </e>
             <e p="Player" t="Include">
               <e p="IPlayerFactory.cs" t="Include" />

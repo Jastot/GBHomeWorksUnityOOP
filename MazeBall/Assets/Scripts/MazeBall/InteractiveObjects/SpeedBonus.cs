@@ -2,13 +2,20 @@
 
 namespace MazeBall
 {
-    public sealed class SpeedBonus 
+    public sealed class SpeedBonus : IInteraction
     {
-        
+        private readonly GamePoolContext _gamePoolContext;
+        private readonly float _speed;
 
-        public void Interaction(PlayerData playerModel,float speed)
+        public SpeedBonus(GamePoolContext gamePoolContext,float speed)
         {
-            
+            _gamePoolContext = gamePoolContext;
+            _speed = speed;
+        }
+
+        public void Interaction()
+        {
+            _gamePoolContext.PlayerModel.PlayerStruct.Speed += _speed;
         }
 
         

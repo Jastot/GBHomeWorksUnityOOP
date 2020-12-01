@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535e98fed3b5495eac71ba7ec54ffb47, type: 3}
   m_Name: BonusSettings
   m_EditorClassIdentifier: 
-  _enemyInfos:
-  - Type: 1
-    EnemyPrefab: {fileID: 4295074901869194713, guid: e56053ad6c6812940aff42e00147d113,
-      type: 3}
-  - Type: 2
-    EnemyPrefab: {fileID: 4295074901869194713, guid: e56053ad6c6812940aff42e00147d113,
-      type: 3}
+  _interactiveStructe:
+  - Enemy: {fileID: 0}
+    Type: 1
+    _position: {x: 1.65, y: 0.758, z: 9.46}
+    Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+    Material: {fileID: 2100000, guid: a2f40e4004b187749ac143197cb3852e, type: 2}
+    Health: 20
+    Speed: 10

@@ -44,7 +44,19 @@ namespace MazeBall
             gameObject.tag = tag;
             return gameObject;
         }
-        
+
+        // public static GameObject AddScriptToEnemy(this GameObject gameObject, InteractiveData interactiveData,
+        //     Transform position)
+        // {
+        //     gameObject.GetOrAddComponent<InteractiveProvider>();
+        //     return gameObject; 
+        // }
+        public static GameObject AddCubeCollider(this GameObject gameObject)
+        {
+            var component = gameObject.GetOrAddComponent<BoxCollider>();
+            component.isTrigger = true;
+            return gameObject;
+        }
         private static T GetOrAddComponent<T>(this GameObject gameObject) where T : Component
         {
             var result = gameObject.GetComponent<T>();

@@ -7,7 +7,7 @@ namespace MazeBall
 
         private readonly Rigidbody _player;
 
-        private readonly PlayerData _playerData;
+        private readonly GamePoolContext _gamePoolContext;
 
         private float _horizontal, _vertical;
 
@@ -16,19 +16,19 @@ namespace MazeBall
         private readonly IUserInputs _horizontalInput,_verticalInput;
 
         public MoveController((IUserInputs inputHorizontal, IUserInputs inputVertical) input,
-            Rigidbody player, PlayerData playerData)
+            Rigidbody player, GamePoolContext gamePoolContext)
         {
             _player = player;
             _horizontalInput = input.inputHorizontal;
             _verticalInput = input.inputVertical;
             _horizontalInput.AxisOnChange += HorizontalOnAxisOnChange;
             _verticalInput.AxisOnChange += VerticalOnAxisOnChange;
-            _playerData = playerData;
+            _gamePoolContext = gamePoolContext;
 
         }
         public void Execute(float deltaTime)
         {
-            var speed = deltaTime * _playerData.PlayerStruct.Speed;
+            var speed = deltaTime * _gamePoolContext.PlayerModel.PlayerStruct.Speed;
             _movement.Set(_horizontal*speed,0.0f,_vertical * speed);
             _player.AddForce(_movement);
         }

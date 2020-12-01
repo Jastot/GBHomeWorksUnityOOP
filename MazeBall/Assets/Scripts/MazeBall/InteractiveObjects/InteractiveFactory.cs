@@ -18,20 +18,30 @@ namespace MazeBall
             _gamePoolContext = gamePoolContext;
         }
             
-        public IInteractive CreateInteractive(InterectiveObjectType type)
+        // public IInteractive CreateInteractive(InterectiveObjectType type)
+        // {
+        //     var enemyProvider = _data.GetEnemyOfType(type);
+        //     return Object.Instantiate(enemyProvider);
+        // }
+        public InteractiveData GiveInteractiveData()
         {
-            var enemyProvider = _data.GetEnemyOfType(type);
-            return Object.Instantiate(enemyProvider);
+            return _data;
         }
 
-        public IInteractive CreateInteractiveFromMass(int index)
+        public GameObject CreateInteractiveFromMass(int index)
         {
-            InteractiveProvider enemyProvider = _data.GetEnemyProviderByIndex(index);
-            enemyProvider.transform.position = _positions[index].position;
-            enemyProvider.type = _data.GetEnemyTypeByIndex(index);
-            enemyProvider.GetGamePoolContext(_gamePoolContext);
-     
-            return Object.Instantiate(enemyProvider);
+            // InteractiveProvider enemyProvider = _data.GetEnemyProviderByIndex(index);
+            // var InstantiateEnemy = Object.Instantiate(enemyProvider);
+            //
+            // InstantiateEnemy.transform.position = _positions[index].position;
+            // InstantiateEnemy.type = _data.GetEnemyTypeByIndex(index);
+            // InstantiateEnemy.index = index;
+            //InstantiateEnemy.GetGamePoolContext(_gamePoolContext);
+            //return InstantiateEnemy;
+            return new GameObject($"{index}").AddMeshFilter(_data._interactiveStructe[index].Mesh).
+                AddCubeCollider().AddMeshRenderer(_data._interactiveStructe[index].Material);
         }
+        
+
     }
 }
